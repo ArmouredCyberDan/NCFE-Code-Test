@@ -1,6 +1,9 @@
-﻿namespace Ncfe.CodeTest
+﻿using Ncfe.CodeTest.DataAccess.Abstractions;
+using Ncfe.CodeTest.Responses;
+
+namespace Ncfe.CodeTest.DataAccess
 {
-    public class LearnerDataAccess
+    public class LearnerDataAccess : ILearnerDataAccess
     {
         public LearnerResponse LoadLearner(int learnerId)
         {

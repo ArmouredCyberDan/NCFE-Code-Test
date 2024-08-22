@@ -1,6 +1,9 @@
-﻿namespace Ncfe.CodeTest
+﻿using Ncfe.CodeTest.Models;
+using Ncfe.CodeTest.Services.Abstractions;
+
+namespace Ncfe.CodeTest.Services
 {
-    public class ArchivedDataService
+    public class ArchivedDataService : IArchivedDataService
     {
         public Learner GetArchivedLearner(int learnerId)
         {
