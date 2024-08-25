@@ -12,7 +12,8 @@ using Ncfe.CodeTest.Services.Abstractions;
 
 namespace Ncfe.CodeTest
 {
-    // This class can be used wherever you need to inject the classes and abstractions from this assembly, it makes it a bit more modular
+    // This class can be used wherever you need to inject the classes and abstractions from this assembly, it makes it a bit more modular You can easily swap out
+    // The actual implementation of the interfaces here
     public static class DependencyInjectionExtensions
     {
         public static IServiceCollection AddComponents(this IServiceCollection services)

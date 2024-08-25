@@ -3,9 +3,7 @@ using System.Configuration;
 using System;
 using Ncfe.CodeTest.Services.Abstractions;
 using Ncfe.CodeTest.Repositories.Abstractions;
-using Ncfe.CodeTest.Responses.Abstractions;
 using Ncfe.CodeTest.Models.Abstractions;
-using System.Collections.Generic;
 
 namespace Ncfe.CodeTest.Services
 {
