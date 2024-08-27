@@ -1,4 +1,4 @@
-﻿using Ncfe.CodeTest.DataAccess.Abstractions;
+﻿using Ncfe.CodeTest.Interfaces;
 using Ncfe.CodeTest.Models;
 using Ncfe.CodeTest.Responses;
 

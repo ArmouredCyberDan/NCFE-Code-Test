@@ -1,6 +1,4 @@
-﻿using Ncfe.CodeTest.Models.Abstractions;
-
-namespace Ncfe.CodeTest.Services.Abstractions
+﻿namespace Ncfe.CodeTest.Interfaces
 {
     public interface IFailoverService
     {

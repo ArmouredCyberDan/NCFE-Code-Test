@@ -1,6 +1,6 @@
 ﻿using Ncfe.CodeTest.Models;
 
-namespace Ncfe.CodeTest.Services.Abstractions
+namespace Ncfe.CodeTest.Interfaces
 {
     public interface IArchivedDataService
     {

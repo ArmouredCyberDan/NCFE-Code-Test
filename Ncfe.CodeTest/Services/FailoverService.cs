@@ -1,14 +1,17 @@
 ﻿using Ncfe.CodeTest.DataAccess;
 using System.Configuration;
 using System;
-using Ncfe.CodeTest.Services.Abstractions;
-using Ncfe.CodeTest.Repositories.Abstractions;
-using Ncfe.CodeTest.Models.Abstractions;
+using Ncfe.CodeTest.Interfaces;
 
 namespace Ncfe.CodeTest.Services
 {
     public class FailoverService : IFailoverService
     {
+        private const string FailoverEnabledTrueValue = "true";
+        private const string FailoverEnabledSettingsKey = "IsFailoverModeEnabled";
+        private const int FailoverRequestsThreshold = 100;
+        private const int MaximumHoldTimeThreshold = -10;
+
         private readonly IFailoverRepository _failoverRepository;
 
         public FailoverService(IFailoverRepository failoverRepository)
@@ -19,10 +22,10 @@ namespace Ncfe.CodeTest.Services
         // I moved the responsibility to see if Failover should be used to this service as it makes sense that it should be handled here, I use a string.Equals and ignore case to avoid the double check for test || Test
         public bool FailOverEnabled()
         {
-            var failoverSettingValue = ConfigurationManager.AppSettings["IsFailoverModeEnabled"];
+            var failoverSettingValue = ConfigurationManager.AppSettings[FailoverEnabledSettingsKey];
             var failedRequests = GetFailedRequests();
 
-            if (failedRequests > 100 && string.Equals(failoverSettingValue, "true", StringComparison.OrdinalIgnoreCase))
+            if (failedRequests > FailoverRequestsThreshold && string.Equals(failoverSettingValue, FailoverEnabledTrueValue, StringComparison.OrdinalIgnoreCase))
             {
                 return true;
             }
@@ -35,7 +38,7 @@ namespace Ncfe.CodeTest.Services
         {
             var failoverEntries = _failoverRepository.GetFailOverEntries();
             int failedRequests = 0;
-            var maximumHoldTime = DateTime.Now.AddMinutes(-10);
+            var maximumHoldTime = DateTime.Now.AddMinutes(MaximumHoldTimeThreshold);
 
             foreach (var failoverEntry in failoverEntries)
             {

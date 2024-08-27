@@ -1,5 +1,4 @@
-﻿using Ncfe.CodeTest.Models.Abstractions;
-using Ncfe.CodeTest.Repositories.Abstractions;
+﻿using Ncfe.CodeTest.Interfaces;
 using System.Collections.Generic;
 
 namespace Ncfe.CodeTest.Repositories

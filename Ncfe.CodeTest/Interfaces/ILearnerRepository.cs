@@ -1,6 +1,4 @@
-﻿using Ncfe.CodeTest.Responses.Abstractions;
-
-namespace Ncfe.CodeTest.Repositories.Abstractions
+﻿namespace Ncfe.CodeTest.Interfaces
 {
     public interface ILearnerRepository
     {

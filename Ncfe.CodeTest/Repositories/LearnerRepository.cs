@@ -1,6 +1,4 @@
-﻿using Ncfe.CodeTest.DataAccess.Abstractions;
-using Ncfe.CodeTest.Repositories.Abstractions;
-using Ncfe.CodeTest.Responses.Abstractions;
+﻿using Ncfe.CodeTest.Interfaces;
 
 namespace Ncfe.CodeTest.Repositories
 {

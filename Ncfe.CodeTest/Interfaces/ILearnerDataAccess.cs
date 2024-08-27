@@ -1,6 +1,6 @@
 ﻿using Ncfe.CodeTest.Responses;
 
-namespace Ncfe.CodeTest.DataAccess.Abstractions
+namespace Ncfe.CodeTest.Interfaces
 {
     public interface ILearnerDataAccess
     {

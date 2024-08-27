@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ncfe.CodeTest.Models.Abstractions
+namespace Ncfe.CodeTest.Interfaces
 {
     public interface IFailoverEntry
     {

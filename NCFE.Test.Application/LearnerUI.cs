@@ -1,5 +1,4 @@
-﻿using Ncfe.CodeTest.Models.Abstractions;
-using Ncfe.CodeTest.Services.Abstractions;
+﻿using Ncfe.CodeTest.Interfaces;
 
 namespace NCFE.Test.Application
 {

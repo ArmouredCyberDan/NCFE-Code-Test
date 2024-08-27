@@ -57,25 +57,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess.Abstractions\ILearnerDataAccess.cs" />
+    <Compile Include="Interfaces\ILearnerDataAccess.cs" />
     <Compile Include="DependencyInjectionExtensions.cs" />
-    <Compile Include="Models.Abstractions\IFailoverEntry.cs" />
-    <Compile Include="Services.Abstractions\IFailoverService.cs" />
-    <Compile Include="Repositories.Abstractions\ILearnerRepository.cs" />
-    <Compile Include="Responses.Abstractions\ILearnerResponse.cs" />
-    <Compile Include="Repositories.Abstractions\IFailoverRepository.cs" />
+    <Compile Include="Interfaces\IFailoverEntry.cs" />
+    <Compile Include="Interfaces\IFailoverService.cs" />
+    <Compile Include="Interfaces\ILearnerRepository.cs" />
+    <Compile Include="Interfaces\ILearnerResponse.cs" />
+    <Compile Include="Interfaces\IFailoverRepository.cs" />
     <Compile Include="Repositories\LearnerRepository.cs" />
     <Compile Include="Services\ArchivedDataService.cs" />
     <Compile Include="Models\FailoverEntry.cs" />
     <Compile Include="DataAccess\FailoverLearnerDataAccess.cs" />
     <Compile Include="Repositories\FailoverRepository.cs" />
-    <Compile Include="Models.Abstractions\ILearner.cs" />
+    <Compile Include="Interfaces\ILearner.cs" />
     <Compile Include="Models\Learner.cs" />
     <Compile Include="DataAccess\LearnerDataAccess.cs" />
     <Compile Include="Responses\LearnerResponse.cs" />
-    <Compile Include="Services.Abstractions\IArchivedDataService.cs" />
+    <Compile Include="Interfaces\IArchivedDataService.cs" />
     <Compile Include="Services\FailoverService.cs" />
-    <Compile Include="Services.Abstractions\ILearnerService.cs" />
+    <Compile Include="Interfaces\ILearnerService.cs" />
     <Compile Include="Services\LearnerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

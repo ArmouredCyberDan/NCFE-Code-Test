@@ -1,8 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ncfe.CodeTest;
-using Ncfe.CodeTest.Models.Abstractions;
-using Ncfe.CodeTest.Services.Abstractions;
+using Ncfe.CodeTest.Interfaces;
 
 namespace NCFE.Test.Application
 {

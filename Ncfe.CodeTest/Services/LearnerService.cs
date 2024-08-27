@@ -1,10 +1,7 @@
-﻿using Ncfe.CodeTest.Models.Abstractions;
-using Ncfe.CodeTest.Repositories.Abstractions;
-using Ncfe.CodeTest.Responses.Abstractions;
-using Ncfe.CodeTest.Services.Abstractions;
+﻿using Ncfe.CodeTest.Interfaces;
 
-// I am using contracts above by having interfaces in their own namespaces (these could be their own projects depending on the structure of the actual program), this provides flexibility as the actual implemented classes
-// Can be changed out and as long as they implement these interfaces then this services doesn't need to change. This is especially powerful when changing the way data access is performed (swapping between SQL / No sql etc.)
+// I am using contracts above by having interfaces in their own namespace (these could be their own projects depending on the structure of the actual program), this provides flexibility as the actual implemented classes
+// Can be changed out and as long as they implement these interfaces then this service doesn't need to change. This is especially powerful when changing the way data access is performed (swapping between SQL / No sql etc.)
 // If i could change the the signatures in the restricted classes in this challenge then I would pass around the ILearner class only in case we want to change how this is implemented. Once the app is built around contracts,
 // It becomes much easier to swap things around.
 namespace Ncfe.CodeTest.Services

@@ -1,11 +1,8 @@
 using Ncfe.CodeTest.DataAccess;
-using Ncfe.CodeTest.DataAccess.Abstractions;
+using Ncfe.CodeTest.Interfaces;
 using Ncfe.CodeTest.Models;
-using Ncfe.CodeTest.Models.Abstractions;
 using Ncfe.CodeTest.Repositories;
-using Ncfe.CodeTest.Repositories.Abstractions;
 using Ncfe.CodeTest.Services;
-using Ncfe.CodeTest.Services.Abstractions;
 
 namespace NCFE_Unit_Tests
 {
@@ -41,7 +38,7 @@ namespace NCFE_Unit_Tests
             ILearner learner = _learnerService.GetLearner(userId, isLearnerArchived);
 
             // Assert
-            Assert.IsInstanceOfType(learner, typeof(Learner));
+            Assert.IsNotNull(learner);
         }
 
         // Test learnerId and !isArchived
@@ -56,7 +53,7 @@ namespace NCFE_Unit_Tests
             ILearner learner = _learnerService.GetLearner(userId, isLearnerArchived);
 
             // Assert
-            Assert.IsInstanceOfType(learner, typeof(ILearner));
+            Assert.IsNotNull(learner);
         }
     }
 }

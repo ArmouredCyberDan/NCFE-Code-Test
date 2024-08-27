@@ -1,14 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Ncfe.CodeTest.DataAccess;
-using Ncfe.CodeTest.DataAccess.Abstractions;
 using Ncfe.CodeTest.Models;
-using Ncfe.CodeTest.Models.Abstractions;
 using Ncfe.CodeTest.Repositories;
-using Ncfe.CodeTest.Repositories.Abstractions;
 using Ncfe.CodeTest.Responses;
-using Ncfe.CodeTest.Responses.Abstractions;
 using Ncfe.CodeTest.Services;
-using Ncfe.CodeTest.Services.Abstractions;
+using Ncfe.CodeTest.Interfaces;
 
 namespace Ncfe.CodeTest
 {

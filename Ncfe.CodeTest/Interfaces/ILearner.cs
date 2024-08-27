@@ -1,4 +1,4 @@
-﻿namespace Ncfe.CodeTest.Models.Abstractions
+﻿namespace Ncfe.CodeTest.Interfaces
 {
     public interface ILearner
     {
