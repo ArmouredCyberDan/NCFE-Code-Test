@@ -1,6 +1,5 @@
 using Ncfe.CodeTest.DataAccess;
 using Ncfe.CodeTest.Interfaces;
-using Ncfe.CodeTest.Models;
 using Ncfe.CodeTest.Repositories;
 using Ncfe.CodeTest.Services;
 

@@ -1,8 +1,9 @@
 ﻿using Ncfe.CodeTest.Interfaces;
+using NCFE.Test.Application.Interfaces;
 
 namespace NCFE.Test.Application
 {
-    public class LearnerUI
+    public class LearnerUI : ILearnerUI
     {
         private readonly ILearnerService _learnerService;
 
